@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+body{
+    font-family: "Open Sans", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Barre de navigation*/
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+nav h1{
+    font-size: 20px;
+}
+nav .Onglets{
+    display: flex;
+    flex-wrap: wrap;
+}
+nav .Onglets p{
+    font-size: 17px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+nav .Onglets input{
+    margin: 8px 20px;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: white;
+
+}
+/*Fin de la barre de navigation*/
+
+/*Header*/
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+header h1{
+font-size: 50px;
+max-width: 500px;
+text-align: center;
+}
+header button{
+    padding: 15px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+/*Header*/
+
+/*Section principale*/
+.main{
+    margin: 100px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*Fin de la section principale*/
+/*Toutes les cartes*/
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cards .card{
+    margin-right: 40px;
+    cursor: pointer;
+}
+.cards .card img{
+    width: 287px;
+}
+.cards .card .card-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.cards .card .card-body p{
+    margin-top: -10px;
+}
+/*Fin des cartes*/
+
+/*Vidéo de présentation*/
+.main .video{
+    margin-top: 80px;
+    width: 90%;
+}
+.main .video iframe{
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    height: 400px;
+}
+/*Fin de la vidéo de présenation*/
+/*Fin de la section principale*/
+
+/*Pied de page*/
+footer{
+    margin-top: 100px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px;
+}
+footer .social-media{
+    display: flex;
+}
+footer .social-media p{
+    margin-right: 15px;
+    border: 1px solid white;
+    border-radius: 100%;
+    padding: 5px;
+    text-align: center;
+    width: 20px;
+    cursor: pointer;
+}
+/*Fin du pied de page*/
+
+@media screen and (max-width:640px){
+    nav .Onglets .link{
+        display: none;
+    }
+    .cards .card img{
+        width: 300px;
+    }
+
+}    
